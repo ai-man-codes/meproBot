@@ -7,6 +7,7 @@ import requests
 import random
 import json
 import time
+import sys
 
 print("\t\tmeproBot by Ai-man\n")
 
@@ -62,7 +63,8 @@ def main():
                     send_answer(request_urls)
                     
     except KeyboardInterrupt:
-        driver.quit()                         
+        driver.quit()
+        sys.exit()                   
                                 
 if __name__ == "__main__":
     main()
