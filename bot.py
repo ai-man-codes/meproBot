@@ -8,6 +8,8 @@ import random
 import json
 import time
 
+print("\t\tmeproBot by Ai-man\n")
+
 URL_LOGIN = "https://mepro.pearson.com/login"
 URL_PostActivityLogDetails = "https://mepro.pearson.com/CallToServer.aspx/PostActivityLogDetails"
 
