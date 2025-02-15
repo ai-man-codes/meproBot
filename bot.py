@@ -37,9 +37,9 @@ def send_answer(request_urls: list):
         
         post_data = {
             "obj": {
-                "ActivityScore": random.randrange(71, 100), 
+                "ActivityScore": random.randrange(85, 100), 
                 "ActivityStatus": "completed",
-                "TimeSpent": f"00:{random.randrange(3, 20)}:{random.randrange(0, 59)}"
+                "TimeSpent": f"00:{random.randrange(2, 10)}:{random.randrange(0, 59)}"
             }
         }
         
