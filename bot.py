@@ -43,7 +43,7 @@ def send_answer(request_urls: list):
             }
         }
         
-        time.sleep(5)
+        time.sleep(2)
         
         response = requests.post(URL_PostActivityLogDetails, headers=headers, cookies=cookies, json=post_data)
         print(f"\nstatus code : {response.status_code}")
