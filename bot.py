@@ -39,15 +39,30 @@ def send_answer(request_urls: list):
             "obj": {
                 "ActivityScore": random.randrange(85, 100), 
                 "ActivityStatus": "completed",
-                "TimeSpent": f"00:{random.randrange(2, 10)}:{random.randrange(0, 59)}"
+                "TimeSpent": f"00:{random.randrange(2, 10)}:{random.randrange(0, 59)}",
+                "ActivityScoreDetailsList": [
+                    {"SkillName": "Reading", "Minimum": 70, "Maximum": 100, "SkillScore": random.choice([75, 100])},
+                    {"SkillName": "Listening", "Minimum": 70, "Maximum": 100, "SkillScore": random.choice([75, 100])},
+                    {"SkillName": "Vocabulary", "Minimum": 70, "Maximum": 100, "SkillScore": random.choice([75, 100])},
+                    {"SkillName": "Grammar", "Minimum": 70, "Maximum": 100, "SkillScore": random.choice([75, 100])},
+                ],
             }
         }
+            
+        # post_data = {
+        #     "obj": {
+        #         "ActivityScore": random.randrange(85, 100), 
+        #         "ActivityStatus": "completed",
+        #         "TimeSpent": f"00:{random.randrange(2, 10)}:{random.randrange(0, 59)}"
+        #     }
+        # }
         
         time.sleep(2)
         
         response = requests.post(URL_PostActivityLogDetails, headers=headers, cookies=cookies, json=post_data)
         print(f"\nstatus code : {response.status_code}")
         print("This Task is done !")
+        
             
 def main():
     try:
