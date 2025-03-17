@@ -2,6 +2,10 @@
 
 MeproBot is an automated task completion bot built with Selenium and Python. It includes a time change feature, allowing tasks to be executed at specific intervals or times.
 
+# Download
+
+[Download Latest Version](https://github.com/ai-man-codes/meproBot/releases/latest/download/meproBot.exe)
+
 ## Features
 
 - Automates all tasks using Selenium.
